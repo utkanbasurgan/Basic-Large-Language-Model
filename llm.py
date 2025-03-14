@@ -269,7 +269,7 @@ def main():
     # Parameters
     data_path = "/home/neparth/neparth_workers/servers_daemons/sites-101s_servers/dataset.txt"  # Path to your text file
     vocab_size = 10000
-    embed_size = 256
+    embed_size = 734
     hidden_size = 512
     num_layers = 4
     num_heads = 8
