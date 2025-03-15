@@ -72,6 +72,7 @@ class SimpleTokenizer:
         
         return " ".join(words)
 
+#---------------------------------------------------------------------------------------------------------------------------------
 
 class TextDataset(Dataset):
     def __init__(self, texts, tokenizer, max_length=128):
@@ -218,6 +219,7 @@ def train_model(model, train_dataloader, val_dataloader, epochs=10, lr=0.001, de
     
     return model
 
+#---------------------------------------------------------------------------------------------------------------------------------
 
 def generate_text(model, tokenizer, prompt, max_length=100, temperature=1.0, device='cuda'):
     model.eval()
@@ -247,6 +249,7 @@ def generate_text(model, tokenizer, prompt, max_length=100, temperature=1.0, dev
     generated_text = tokenizer.decode(input_tensor[0].cpu().tolist())
     return generated_text
 
+#---------------------------------------------------------------------------------------------------------------------------------
 
 def load_dataset(data_path, test_split=0.1):
     """Load text data from a file and split into train and validation sets"""
@@ -264,6 +267,7 @@ def load_dataset(data_path, test_split=0.1):
     
     return train_texts, val_texts
 
+#---------------------------------------------------------------------------------------------------------------------------------
 
 def main():
     # Parameters
