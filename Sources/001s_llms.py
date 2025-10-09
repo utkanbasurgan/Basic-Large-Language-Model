@@ -9,7 +9,7 @@ import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
 import random
 
-sss
+ssss
 class TextDataset(Dataset):
     
     def __init__(self, text, seq_length):
