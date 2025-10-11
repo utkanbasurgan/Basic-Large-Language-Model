@@ -9,7 +9,6 @@ import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
 import numpy as np
 
-s
 class TextDataset(Dataset):
     
     def __init__(self, text, seq_length):
