@@ -8,7 +8,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
 import numpy as np
-ssss
+ssssss
 class TextDataset(Dataset):
     
     def __init__(self, text, seq_length):
