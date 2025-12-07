@@ -2,7 +2,7 @@
 # Utkan Başurgan
 #
 #---------------------------------------------------------------------------------------------------------------------------------
-abcdefg
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
